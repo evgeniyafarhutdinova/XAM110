@@ -1,6 +1,5 @@
 ﻿using System.IO;
 using Android.Content;
-using MyTunes.Shared;
 
 namespace MyTunes
 {
