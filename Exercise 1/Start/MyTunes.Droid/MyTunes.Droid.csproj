@@ -48,8 +48,10 @@
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ListAdapter.cs" />
+    <Compile Include="StreamLoader.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\songs.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
@@ -61,5 +63,11 @@
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Resources\layout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyTunes.Shared\MyTunes.Shared.csproj">
+      <Project>{00ffa5b8-cd0e-41b7-b3ed-ea132033ac58}</Project>
+      <Name>MyTunes.Shared</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
